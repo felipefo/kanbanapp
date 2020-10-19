@@ -1,0 +1,32 @@
+{
+  "name": "kanban.app.com",
+  "version": "1.0.0",
+  "description": "A project for kanban app/web",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/unit/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipefo/kanbanapp.git"
+  },
+  "keywords": [
+    "Kanban",
+    "Design",
+    "Patterns"
+  ],
+  "author": "felipefo@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipefo/kanbanapp/issues"
+  },
+  "homepage": "https://github.com/felipefo/kanbanapp#readme",
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+     "mocha": "^8.2.0"
+  }
+  
+}

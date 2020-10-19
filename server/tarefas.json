@@ -9,5 +9,13 @@
         "name": "Fazer compras",
         "category": "Casa",
 		"kanban": "Feito"
+    }], 
+	
+	"tokens": [{
+        "id": 1,
+        "user": "joao","token": "uuid"
+    }, {
+        "id": 2,"user" : "jose","token" : "uuid"		
     }]
+	
 }
