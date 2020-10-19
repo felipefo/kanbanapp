@@ -16,7 +16,7 @@ function PushMessageBuilder() {
      }
 	 	 
 	 
-    this.message  = function (title, body) {
+    this.setMessage  = function (title, body) {
         this.message =  {
           "title" : title,      
           "body" :  body 
@@ -25,11 +25,11 @@ function PushMessageBuilder() {
         return this;        
      }  
 	 
-    this.build = function(registration_ids)
+    this.build = function()
     {
        //fix that for wait an array.                     
        let  reqBody =  {
-           'registration_ids' :  [registration_ids],
+           'registration_ids' :  [this.token],
              'data' : this.message, 
              'priority' : 'high'
        };
@@ -60,8 +60,7 @@ let resultado  = await axios.get('http://localhost:3000/tokens?user='+user_name,
 }
 
 
-const pushMessageBuilder  = new PushMessageBuilder();
-module.exports = { pushMessageBuilder };
+module.exports = { PushMessageBuilder };
   
   
 
