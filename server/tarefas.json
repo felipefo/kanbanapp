@@ -1,0 +1,13 @@
+{
+    "tarefas": [{
+        "id": 1,
+        "name": "Estudar para aula",
+        "category": "Estudos",
+		"kanban": "A Fazer"
+    }, {
+        "id": 2,
+        "name": "Fazer compras",
+        "category": "Casa",
+		"kanban": "Feito"
+    }]
+}
